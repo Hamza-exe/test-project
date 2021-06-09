@@ -1,0 +1,184 @@
+/*Code Sourced from previous activity*/
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/*Code Sourced from previous activity with many modifications*/
+nav{
+    height: auto;
+    background-color: #191919;
+    width: 100%;
+    padding-top: 3px;
+    display: flex;
+    -webkit-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-left: 11px;
+        list-style: none;
+
+        li{
+            a{
+                display: inline-block;
+                text-align: left;
+                margin-left: 9px;
+                padding: 5px;
+                text-decoration: none;
+                margin-bottom: 2px;
+                margin-right: 2px;
+                color: whitesmoke;
+                flex-grow: 1;
+                flex-shrink: 0;
+                flex-basis: 78px;
+            }
+        }
+    }
+}
+
+body{
+    margin: 0;
+    background-color: #000000;
+}
+
+#welcome-box{
+    background-color: #191919;
+    width: 100%;
+    margin-top: 30px;
+    display: inline-block;
+
+    img{
+        width: 50%;
+        float: right;
+    }
+
+    p{
+        color: whitesmoke;
+        float: left;
+        width: 50%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    h2{
+        color: whitesmoke;
+        width: 50%;
+        margin-top: 20px;
+        font-size: 250%;
+        text-align: center;
+    }
+}
+
+.header{
+
+    /*Code Sourced from: https://stackoverflow.com/questions/11701311/logo-image-and-h1-heading-on-the-same-line, with modifications*/
+    img{
+        float: left;
+        margin-left: 50px;
+        width: 125px;
+        height: 100px;
+    }
+
+    /*Code Sourced from: https://stackoverflow.com/questions/11701311/logo-image-and-h1-heading-on-the-same-line, with modifications*/
+    h1{
+        position: relative;
+        top: 18px;
+        left: 5px;
+        color: whitesmoke;
+        font-size: 50px;
+        margin-bottom: 20px;
+        margin-left: 30px;
+    }
+}
+
+/* styling the hovered link on menu bar */
+nav a:hover, nav a:focus {
+    border-style: solid;
+}
+
+@media all and (min-width: 1280px){
+    
+    /*Code Sourced from previous activity with modifications*/
+    nav a{
+        display: inline-block;
+        text-align: left;
+        margin-left: 25px;
+        text-decoration: none;
+        margin-bottom: 5px;
+        margin-right: 5px;
+        color: whitesmoke;
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: 215px;
+    }
+
+    #welcome-box{
+        margin-top: 6%;
+        margin-left: 7%;
+        margin-right: 7%;
+        width: 86%;
+
+        p{
+            color: whitesmoke;
+            float: left;
+            width: 50%;
+            text-align: center;
+            padding: 40px;
+            line-height: 30px;
+            margin-top: 0;
+        }
+
+        h2{
+            font-size: 400%;
+            margin-top: 200px;
+            margin-bottom: 0;
+        }
+    }
+
+    /*Code Sourced from previous activity with modifications*/
+    nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-left: 30px;
+        list-style: none;
+    }
+    
+    h1{
+        color: whitesmoke;
+        font-size: 50px;
+        margin-bottom: 20px;
+        margin-left: 30px;
+    }
+    
+    
+    /*Code Sourced from: https://stackoverflow.com/questions/11701311/logo-image-and-h1-heading-on-the-same-line, with modifications*/
+    .header img {
+        float: left;
+        margin-left: 50px;
+        width: 125px;
+        height: 100px;
+    }
+    
+    /*Code Sourced from: https://stackoverflow.com/questions/11701311/logo-image-and-h1-heading-on-the-same-line, with modifications*/
+    .header h1 {
+        position: relative;
+        top: 18px;
+        left: 5px;
+    }
+}

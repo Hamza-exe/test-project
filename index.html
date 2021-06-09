@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<!--
+Name: Hamza Elafifi
+Course: Software Development 20S
+Teacher: Mr. Hardman
+School: Pembina Trails Early College
+Date Last Modified: May, 27, 2021
+-->
+
+<html>
+    <head>
+        <!-- Title of website -->
+        <title>Hamza Elafifi's Portfolio</title>
+     
+        <meta charset="utf-8"/>
+     
+        <!-- Link to external stylesheet -->
+        <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+     
+        <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"/>
+
+        <style>
+            #quote{
+                width: 100vw;
+                height: auto;
+            }
+
+            #git-button{
+                color: whitesmoke;
+                border-style: solid;
+                border-color: whitesmoke;
+                margin-left: 19.5%;
+                padding: 10px;
+                text-decoration: none;
+                background-color: #191919;
+            }
+
+            html {
+                scroll-behavior: smooth;
+            }
+            
+            #form{
+                margin-top: 100%;
+                padding-bottom: 25%;
+                margin-top: 7%;
+                margin-left: 7%;
+                margin-right: 7%;
+                background-color: #191919;
+            }
+
+            #form input{
+                color: whitesmoke;
+                background-color: #191919;
+                border-color: whitesmoke;
+                padding: 10px;
+                height: 50px;
+                margin-top: 10px;
+            }
+
+            #form img{
+                width: 50%;
+                float: right;
+            }
+
+            #social img{
+                width: 21%;
+                height: 21%;
+            }
+
+            #form p{
+                color: whitesmoke;
+                float: left;
+                width: 50%;
+                text-align: center;
+                padding-left: 40px;
+                padding-right: 40px;
+                margin-top: 0;
+            }
+
+            #form h2{
+                color: whitesmoke;
+                width: 50%;
+                text-decoration: underline;
+                font-size: 200%;
+                text-align: center;
+                padding-top: 100px;
+            }
+
+            textarea{
+                background-color: #191919;
+                border-color: whitesmoke;
+                color: whitesmoke;
+                padding: 10px;
+                margin-top: 10px;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="header">
+            <img src="Images/HE.png">
+            <h1>Hamza Elafifi</h1>
+        </div>
+
+        <!-- Navigation bar with all the relevant links to the website. -->
+        <nav>
+            <ul>
+                <li>
+                    <!-- link to home page (current page) -->
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <!-- link to restoration page -->
+                    <a href="restoration.html">About Me</a>
+                </li>
+
+                <li>
+                    <!-- link to page to contact me -->
+                    <a href="Contact-me.html">Resume and Cover Letter</a>
+                </li>
+
+                <li>
+                    <!-- Link to my youtube channel -->
+                    <a href="https://www.youtube.com/channel/UCYTfeACDrpILPk3aRw5B7aw">Work Samples</a>
+                </li>
+
+                <li>
+                    <!-- link to purchase retro consoles -->
+                    <a href="https://www.dkoldies.com/">Community Involvement</a>
+                </li>
+
+                <li>
+                    <!-- Merch link -->
+                    <a href="https://retro-gaming-t-shirts.creator-spring.com/?">Extracurricular Activities</a>
+                </li>
+                
+            </ul>
+        </nav>
+        
+        <div id="welcome-box">
+            <img src="Images/Hamza.jpg">
+            <h2>Welcome!</h2>
+            <p>Welcome to my portfolio. From Artifacts to ECA, this is where you find out more about me! I thrive on creative challenges and enjoy building strong relationships along the way. Explore my work from the menu on top, or contact me directly to learn more. <br>Thanks!</p>
+            <a id="git-button" href="#form">Get in Touch</a>
+        </div>
+
+        <!-- <img id="quote" src="images/quote.png"> -->
+
+        <div id="form">
+            <img src="images/contact-me.webp">
+            <h2>Contact Me!</h2>
+            <p>Interested in learning more about me, my work, or how I can benefit your business or workplace?</p>
+            <p>Contact me with the info below!</p>
+            <p>Hamzaelafifi12@gmail.com</p>
+            <p>204-896-4755</p>
+            <div class="social">
+                <a>
+                    <img src="images/instagram.webp">
+                </a>
+                <a>
+                    <img src="images/facebook.webp">
+                </a>
+                <a>
+                    <img src="images/youtube.webp">
+                </a>
+            </div>
+            <form style="text-align: center;" action="MAILTO:hamzaelafifi12@gmail.com" method="post" enctype="text/plain">
+                  <!--Place user contact name -->
+                  <input type="text" id="uname" name="uname" placeholder="Name" size="50" maxlength="7"><br>
+      
+                  <!--Customer fills their Email address info -->
+                  <input type="text" id="eaddress" name="eaddress" placeholder="Email Address" size="50" maxlength="100"><br>
+
+                  <!--Customer fills the subject-->
+                  <input type="text" id="subject" name="subject" placeholder="Subject" size="50" maxlength="100" >
+      
+                  <!--Text box area for user to ask question-->
+                  <br><textarea id="request" placeholder="Type your message here..." name="request" rows="8" cols="50"> </textarea><br>
+      
+                  <!--Submit button for user to send their request-->
+                  <input type="submit" value="Submit"><br><br>
+            </form> 
+         </div>
+
+         <script>
+
+            window.onbeforeunload = function () {
+
+                window.location.href = "index.html";
+
+            }
+
+         </script>
+        
+    </body>
+</html>
