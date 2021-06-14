@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<!--
+Name: Hamza Elafifi
+Course: Software Development 20S
+Teacher: Mr. Hardman
+School: Pembina Trails Early College
+Date Last Modified: June, 13, 2021
+-->
+
+<html>
+    <head>
+        <!-- Title of website -->
+        <title>About Me</title>
+     
+        <meta charset="utf-8"/>
+     
+        <!-- Link to external stylesheet -->
+        <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+     
+        <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"/>
+        
+        <style>
+            
+            /* different styling for different view ports, this styles things differently for desketop users for the website */
+            @media all and (min-width: 1280px){
+
+                /* Adds a margin to all sides of 7% except for bottom being 0 */
+                #about-me{
+                    margin: 7%;
+                    margin-bottom: 0;
+                }
+
+                /* Adds a margin to all sides of 7% except for bottom being 0 */
+                #more-about{
+                    margin: 7%;
+                    margin-bottom: 0;
+                }
+            }
+
+            /* Styles about me div to have background color and margin for the top */
+            #about-me{
+                background-color: #191919;
+
+                /* This is to have the div height the same as the longest content, in this case the photo. This is to have consistency */
+                display: inline-block;
+                margin-top: 7%;
+            }
+
+            /* Styles the photo for about me to be on the right side and take 50% of the div */
+            #about-me img{
+                float: right;
+                width: 50%;
+            }
+
+            /* Allows the paragraph element in the about me div to take up 50% of the width */
+            #about-me p{
+                width: 50%;
+            }
+
+            /* Styles the More About Hamza Div to have certian padding and margin with a background color */
+            #more-about{
+                background-color: #191919;
+                padding: 40px;
+                padding-top: 80px;
+                padding-bottom: 80px;
+                margin-top: 7%;
+            }
+
+            /* Styles the heading 2 of More about Hamza since seperate styling is needed */
+            #more-about h2{
+                color: whitesmoke;
+                font-size: 200%;
+                text-align: center;
+            }
+
+        </style>
+    
+    </head>
+
+    <body>
+
+        <!-- My header with div of HE Hamza Elafifi logo and the H2 with Hamza Elafifi -->
+        <div id="header">
+
+            <!-- HE logo -->
+            <img src="Images/HE.png" alt="Hamza Elafifi Logo">
+            <h2>Hamza Elafifi</h2>
+        </div>
+
+        <!-- Navigation bar with all the relevant links to the website. -->
+        <nav>
+            <ul>
+                <li>
+                    <!-- link to home page -->
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <!-- About me page (current page) -->
+                    <a href="about-me.html">About Me</a>
+                </li>
+
+                <li>
+                    <!-- My resume and coverletter page -->
+                    <a href="">Resume & Cover Letter</a>
+                </li>
+
+                <li>
+                    <!-- My work samples page -->
+                    <a href="">Work Samples</a>
+                </li>
+
+                <li>
+                    <!-- My community involvement page -->
+                    <a href="community-involvement.html">Community Involvement</a>
+                </li>
+
+                <li>
+                    <!-- My ExtraCirricular Activities page-->
+                    <a href="eca.html">Extracurricular Activities</a>
+                </li>
+
+                <li>
+                    <!-- Contact Me page -->
+                    <a href="contact-me.html">Contact Me</a>
+                </li>
+                
+            </ul>
+        </nav>
+
+        <!-- Div for the about me section of the page -->
+        <div id="about-me">
+
+            <!-- Image containing many aspects in my life in a collage -->
+            <img src="images/about-me.png" alt="Collage of many aspects of my life">
+            <h1>About Me</h1>
+            <p>
+                Welcome! My name is Hamza Elafifi and I currently live in Winnipeg, MB. I am currently a grade 10 High School student at the new program called PTEC, Pembina Trails Early College.
+
+                I first came to Canada at the age of 5 in 2010, currently 15 years old and have already planned my future. I am a responsible and respectful worker who takes the time to do their job properly in order to keep my positive personal brand that people already see in me. I am dedicated and dependable to get the job done, efficiently and in the best manner. 
+                
+                I love Japanese culture, basketball, crafting, cooking, boxing, Arabic, and I LOVE competition. In my spare time, I do shovelling in the winter, babysitting, and yard work. I am currently looking for my next part-time or full-time job.
+            </p>
+
+        </div>
+
+        <!-- More about hamza div that is used to show user that there is more they can learn about me below -->
+        <div id="more-about">
+            <h2>More About Hamza!</h2>
+            <p>Keep scrolling if you're interested!</p>
+        </div>
+
+        <!-- div, using this container format previously used containing the link to education page -->
+        <div class="info-box">
+
+            <!-- Photo showing education, matching the topic of that section -->
+            <img src="images/education.webp" alt="Education Photo">
+            <h2>Education</h2>
+
+            <!-- button to redirect you to the relevant page, up for me to build on in the summer -->
+            <a href="">Read More</a>
+        </div>
+
+        <!-- div, using this container format previously used containing the link to skills page -->
+        <div class="info-box">
+
+            <!-- Photo showing skills, matching the topic of that section -->
+            <img src="images/skills.webp" alt="Skills Photo">
+            <h2>Skills</h2>
+
+            <!-- button to redirect you to the relevant page, up for me to build on in the summer -->
+            <a href="">Read More</a>
+        </div>
+
+        <!-- div, using this container format previously used containing the link to previous work experience page -->
+        <div class="info-box">
+
+            <!-- Photo showing work experience, matching the topic of that section -->
+            <img src="images/work-experience.webp" alt="Previous Work Experience Photo">
+            <h2>Previous Work Experience</h2>
+
+            <!-- button to redirect you to the relevant page, up for me to build on in the summer -->
+            <a href="">Read More</a>
+        </div>
+
+        <!-- Copyright text on bottom to provide ownership -->
+        <p id="copyright">©2021 by Hamza Elafifi.</p>
+    </body>
+</html>
+

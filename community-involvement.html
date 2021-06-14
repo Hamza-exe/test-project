@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<!--
+Name: Hamza Elafifi
+Course: Software Development 20S
+Teacher: Mr. Hardman
+School: Pembina Trails Early College
+Date Last Modified: June, 13, 2021
+-->
+
+<html>
+    <head>
+        <!-- Title of website -->
+        <title>Community Involvement</title>
+     
+        <meta charset="utf-8"/>
+     
+        <!-- Link to external stylesheet -->
+        <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+     
+        <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"/>
+        
+        <style>
+
+            /* different styling for different view ports, this styles things differently for desketop users for the website */
+            @media all and (min-width: 1280px){
+
+                /* This gives the communtiy involv div a margin of 7% on all sides during desktop view */
+                .community-image {
+                    margin: 7%;
+                }
+            }
+
+            /* Styles the image background for every community involvement div. Gives it certain top padding, margin and positions it as relative */
+            .community-image {
+                padding-top: 56.25%;
+                margin-top: 7%;
+                margin-bottom: 7%;
+                position: relative;
+            }
+
+            /* Styles masjid involvement div to have the masjid image as its background image */
+            #masjid-v{
+                background: url(Images/masjid.webp) no-repeat center center;
+            }
+
+            /* Styles park involvement div to have the recycling image as its background image */
+            #recycling-v{
+                background: url(Images/recycling.webp) no-repeat center center;
+            }
+
+            /* Styles library involvement div to have the library image as its background image */
+            #library-v{
+                background: url(Images/books.webp) no-repeat center center;
+            }
+
+            /* Styles the community text div to have a background color with padding and positions it as absolute to be in the bottom. */
+            .community-text {
+                background-color: #191919;
+                position: absolute;
+                bottom: 0;
+                padding: 25px;
+            }
+
+            /* Styles the text in the community text to align to left, and gives it 0 padding */
+            .community-text p{
+                text-align: left;
+                padding: 0;
+            }
+
+            /* styles the h2 tag in each involvement div to have certain fontsize and whitesmoke color*/
+            .community-text h2{
+                color: whitesmoke;
+                font-size: 300%;
+            }
+
+
+            /* Styles the h3 tag to have its allignment in the center and color as whitesmoke */
+            h3{
+                text-align: center;
+                color: whitesmoke;
+            }
+
+        </style>
+    
+    </head>
+
+    <body>
+
+        <!-- My header with div of HE Hamza Elafifi logo and the H2 with Hamza Elafifi -->
+        <div id="header">
+
+            <!-- HE logo -->
+            <img src="Images/HE.png" alt="Hamza Elafifi Logo">
+            <h2>Hamza Elafifi</h2>
+        </div>
+
+        <!-- Navigation bar with all the relevant links to the website. -->
+        <nav>
+            <ul>
+                <li>
+                    <!-- link to home page -->
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <!-- About me page (current page) -->
+                    <a href="about-me.html">About Me</a>
+                </li>
+
+                <li>
+                    <!-- My resume and coverletter page -->
+                    <a href="">Resume & Cover Letter</a>
+                </li>
+
+                <li>
+                    <!-- My work samples page -->
+                    <a href="">Work Samples</a>
+                </li>
+
+                <li>
+                    <!-- My community involvement page -->
+                    <a href="community-involvement.html">Community Involvement</a>
+                </li>
+
+                <li>
+                    <!-- My ExtraCirricular Activities page-->
+                    <a href="eca.html">Extracurricular Activities</a>
+                </li>
+
+                <li>
+                    <!-- Contact Me page -->
+                    <a href="contact-me.html">Contact Me</a>
+                </li>
+                
+            </ul>
+        </nav>
+
+        <h1>Community Involvement</h1>
+
+        <h3>A Brief List of Voluntary Commitments</h3>
+
+        <!-- Div for the community involvement in the library, houses seperate div for text due to styling -->
+        <div class="community-image" id="library-v">
+
+            <!-- Div for the text due to seperate styling -->
+            <div class="community-text">
+                <h2>Pembina Trails Public Library</h2>
+                <p>December 2017- Present</p>
+                <p>The Pembina Trails Public Library host multiple events per year, varying from reading events to children's creativity events. I offer to help and organize the events. I also visit the library frequently and when I have time, I offer to help and volunteer around the library doing odd jobs.</p>
+            </div>
+        </div>
+
+        <!-- Div for the community involvement in the parks, houses seperate div for text due to styling -->
+        <div class="community-image" id="recycling-v">
+
+            <!-- Div for the text due to seperate styling -->
+            <div class="community-text">
+                <h2>St. Vital, Assiniboine, and Jinnah Park</h2>
+                <p>June 2016- Present</p>
+                <p>St.Vital, Assiniboine, and Jinnah Park host yearly park cleanup events that I attend and collect trash and disposables to clean the area. I also go voluntarily at random times for the year to clean the public area by myself.</p>
+            </div>
+        </div>
+
+        <!-- Div for the community involvement in the masjid, houses seperate div for text due to styling -->
+        <div class="community-image" id="masjid-v">
+
+            <!-- Div for the text due to seperate styling -->
+            <div class="community-text">
+                <h2>MIA Waverly Mosque</h2>
+                <p>June 2015- Present</p>
+                <p>My voluntary commitments throughout the mosque are always changing. During the month of Ramadan, I help set up the food, tables and seats. The events are held for people to spend time and eat together as well as feed those who may not have the needed food supply for them to break their fast with or people who are unable to feed themselves.</p>
+            </div>
+        </div>
+
+        <!-- Copyright text on bottom to provide ownership -->
+        <p id="copyright">©2021 by Hamza Elafifi.</p>
+
+    </body>
+</html>
