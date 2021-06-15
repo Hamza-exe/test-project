@@ -91,7 +91,7 @@ Date Last Modified: June, 13, 2021
         <div class="info-box">
 
             <!-- Photo of Hamza Elafifi -->
-            <img src="Images/Hamza.jpg" alt="Picture of Hamza Elafifi">
+            <img src="Images/Hamza.jpg" class="photo" alt="Picture of Hamza Elafifi">
             <h1>Welcome!</h1>
             <p>Welcome to my portfolio. From Artifacts to ECA, this is where you find out more about me! I thrive on creative challenges and enjoy building strong relationships along the way. Explore my work from the menu on top, or contact me directly to learn more. <br>Thanks!</p>
             
@@ -109,7 +109,7 @@ Date Last Modified: June, 13, 2021
         <div id="form">
 
             <!-- Contact image photo -->
-            <img id="contact-img" src="images/contact-me.webp" alt="Contact Me Photo">
+            <img id="contact-img" class="photo" src="images/contact-me.webp" alt="Contact Me Photo">
             <h1>Contact Me!</h1>
             <p>Interested in learning more about me, my work, or how I can benefit your business or workplace?</p>
             <p>Contact me with the info below!</p>
@@ -121,47 +121,106 @@ Date Last Modified: June, 13, 2021
 
                 <!-- Link to my Github page -->
                 <a href="https://github.com/Hamza-exe">
-                    <img src="images/github.png" alt="My Github Page">
+                    <img src="images/github.png" class="photo" alt="My Github Page">
                 </a>
 
                 <!-- Link to my instagram page -->
                 <a href="https://www.instagram.com/notoriousmoza/">
-                    <img src="images/instagram.webp" alt="My Instagram Page">
+                    <img src="images/instagram.webp" class="photo" alt="My Instagram Page">
                 </a>
 
                 <!-- Link to my facebook page -->
                 <a href="https://www.facebook.com/profile.php?id=100010313829213">
-                    <img src="images/facebook.webp" alt="My Facebook Page">
+                    <img src="images/facebook.webp" class="photo" alt="My Facebook Page">
                 </a>
                 
                 <!-- Link to my youtube page -->
                 <a href="https://www.youtube.com/channel/UCYTfeACDrpILPk3aRw5B7aw">
-                    <img src="images/youtube.webp" alt="My Youtube Page">
+                    <img src="images/youtube.webp" class="photo" alt="My Youtube Page">
                 </a>
             </div>
 
             <!-- Form, styled to be centered and contains many typed of input -->
-            <form style="text-align: center;" action="MAILTO:hamzaelafifi12@gmail.com" method="post" enctype="text/plain">
+            <form style="text-align: center;" action="https://formspree.io/f/xpzkrrbk" method="POST" enctype="text/plain" id="my-form">
 
                 <!--Place user contact name -->
-                <input type="text" id="uname" name="uname" placeholder="Name" maxlength="7"><br>
+                <input type="text" id="uname" name="Name" placeholder="Name" maxlength="7"><br>
       
                 <!--Customer fills their Email address info -->
-                <input type="text" id="eaddress" name="eaddress" placeholder="Email Address" maxlength="100"><br>
+                <input type="text" id="eaddress" name="Email" placeholder="Email Address" maxlength="100"><br>
 
                 <!--Customer fills the subject-->
-                <input type="text" id="subject" name="subject" placeholder="Subject" maxlength="100" >
+                <input type="text" id="subject" name="Subject" placeholder="Subject" maxlength="100" >
       
                 <!--Text box area for user to ask question-->
-                <br><textarea id="request" placeholder="Type your message here..." name="request"></textarea><br>
+                <br><textarea id="request" placeholder="Type your message here..." name="Message"></textarea><br>
       
                 <!--Submit button for user to send their request, contains ID for seperate styling and to center it-->
                 <input type="submit" id="submit" value="Submit">
+
+                <!-- code sourced from: https://formspree.io/forms/xpzkrrbk/integration, this is the message presented when the visitors message is sent, states whether its sent successfully or failed -->
+                <p id="my-form-status" style="margin-top: 10px;"></p>
+
             </form> 
         </div>
 
-        <!-- Copyright text on bottom to provide ownership -->
-        <p id="copyright">©2021 by Hamza Elafifi.</p>
-        
+        <script>
+
+            /*Script code sourced from: https://formspree.io/forms/xpzkrrbk/integration, commented by me. Script code to display messages to the client and clean the form*/
+            var form = document.getElementById("my-form");
+            
+            async function handleSubmit(event) {
+                event.preventDefault();
+                var status = document.getElementById("my-form-status");
+                var data = new FormData(event.target);
+                fetch(event.target.action, {
+                    method: form.method,
+                    body: data,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                }).then(response => {
+                    /*When the message is succesfully delivered, this message is displayed*/
+                    status.innerHTML = "Thank you!";
+                    form.reset()
+                }).catch(error => {
+                    /*if an error occurrs while submitting their message, this message is displayed*/
+                    status.innerHTML = "Oops! There was a problem submitting your message"
+                });
+            }
+            form.addEventListener("submit", handleSubmit)
+        </script>
+
+        <!-- footer containing copyright text and social media links -->
+        <footer>
+
+            <!-- Div containing social media icons with links to my social medias. In div due to seperate styling than other photos in this div. Photos alligned to center -->
+            <div id="social" style="text-align: center;">
+
+                <!-- Link to my Github page -->
+                <a href="https://github.com/Hamza-exe">
+                    <img src="images/github.png" class="photo"alt="My Github Page">
+                </a>
+
+                <!-- Link to my instagram page -->
+                <a href="https://www.instagram.com/notoriousmoza/">
+                    <img src="images/instagram.webp" class="photo" alt="My Instagram Page">
+                </a>
+
+                <!-- Link to my facebook page -->
+                <a href="https://www.facebook.com/profile.php?id=100010313829213">
+                    <img src="images/facebook.webp" class="photo" alt="My Facebook Page">
+                </a>
+                
+                <!-- Link to my youtube page -->
+                <a href="https://www.youtube.com/channel/UCYTfeACDrpILPk3aRw5B7aw">
+                    <img src="images/youtube.webp" class="photo" alt="My Youtube Page">
+                </a>
+            </div>
+
+            <!-- Copyright text to prove ownership of website -->
+            <p id="copyright">©2021 by Hamza Elafifi.</p>
+            
+        </footer>
     </body>
 </html>
